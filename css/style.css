@@ -10,18 +10,31 @@ margin: 0;
 }                         
 
 header{
-    background-image: url("../img/b46332e8e2264bf72c8f6a3564c2bad33382c140_hq.gif");
+    background-image: url("../img/download.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     grid-area: banner;
     height: 200px;
 
 }
 
+main{
+    grid-area: main;
+
+}
+
+main h1, main p{
+    text-align: center;
+}
+
+
+
 nav{
+    grid-area: nav;
     align-items: center;
     background-color: salmon;
     display: flex;
     justify-content: space-between;
-    grid-area: nav;
     height: 45px;
     padding: 0px 10px;
 }
@@ -41,4 +54,31 @@ nav div span{
 
 nav img{
     width: 30px;
+}
+
+section{
+    grid-area: section;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+section .funcionarios{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section .funcionarios div img{
+    width: 100px;
+}
+
+@media(min-width:580px){
+    section .funcionarios{
+        width: 100vw;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
