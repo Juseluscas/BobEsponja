@@ -9,6 +9,13 @@ grid-template-columns: 99.7vw;
 margin: 0;
 }                         
 
+header{
+    background-image: url("../img/b46332e8e2264bf72c8f6a3564c2bad33382c140_hq.gif");
+    grid-area: banner;
+    height: 200px;
+
+}
+
 nav{
     align-items: center;
     background-color: salmon;
