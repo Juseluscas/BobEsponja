@@ -6,4 +6,32 @@ body{
                          'section'
                          'footer';
 grid-template-columns: 99.7vw;
+margin: 0;
 }                         
+
+nav{
+    align-items: center;
+    background-color: salmon;
+    display: flex;
+    justify-content: space-between;
+    grid-area: nav;
+    height: 45px;
+    padding: 0px 10px;
+}
+
+nav div{
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    justify-content: space-between;
+}
+
+nav div span{
+    background-color: black;
+    height: 3px;
+    width: 20px;
+}
+
+nav img{
+    width: 30px;
+}
